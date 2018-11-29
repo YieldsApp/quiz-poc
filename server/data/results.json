@@ -1,0 +1,24 @@
+{
+    "results": [
+        {
+            "name": "Alternaria",
+            "from": 6,
+            "to": 6
+        },
+        {
+            "name": "TSWV",
+            "from": 10,
+            "to": 10
+        },
+        {
+            "name": "Septoria",
+            "from": 13,
+            "to": 19
+        },
+        {
+            "name": "Septoria",
+            "from": 16,
+            "to": 26
+        }
+    ]
+}
