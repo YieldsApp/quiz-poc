@@ -3,6 +3,14 @@
   
 
   
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .icon {
+    padding: 0 14px;
+  }
+  
   .header-image {
     background-image: url('/assets/image1.png');
     background-size: cover;

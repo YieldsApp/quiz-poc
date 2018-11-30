@@ -7,7 +7,8 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
 
 
 export interface DialogData {
-  result:string;
+  name: string;
+  probability: number;
 }
 
 @Component({
@@ -15,7 +16,7 @@ export interface DialogData {
   templateUrl: 'dialog-data-result-dialog.html',
 })
 export class DialogDataResultDialog {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 }
 
 @Component({
@@ -27,8 +28,8 @@ export class DialogDataResultDialog {
 export class QuestionsComponent implements OnInit {
   question: Question;
   selectedAnswer: number;
-  result: string;
-  constructor(private router: Router, private service: QuestionsService,public dialog: MatDialog) {
+  result: DialogData;
+  constructor(private router: Router, private service: QuestionsService, public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -57,14 +58,20 @@ export class QuestionsComponent implements OnInit {
 
     this.service.addAnswer(this.question, answer);
 
-    this.service.calculate().subscribe((data: any) => {
-      this.result= data.result;
+    if (this.result) {
+      this.showDialogResult();
+      return;
+    }
 
-      this.dialog.open(DialogDataResultDialog, {
-        data: {
-          result:  data.result
-        }
-      });
+    this.service.calculate().subscribe((data: any) => {
+      this.result = data;
+      this.showDialogResult();
+    });
+  }
+
+  showDialogResult(): void {
+    this.dialog.open(DialogDataResultDialog, {
+      data: this.result
     });
   }
 

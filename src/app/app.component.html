@@ -1,28 +1,24 @@
-<mat-toolbar color="primary"> Welcome to {{ title }}!</mat-toolbar>
+<mat-toolbar color="primary"> 
+ 
+  <mat-toolbar-row>
+      <span> Welcome to {{ title }}!</span>
+      <span class="spacer"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
 
-<div fxLayout="row" fxLayoutAlign="space-around center">
+<!--div fxLayout="row" fxLayoutAlign="space-around center">
 
     <div fxFlex="33" class="one" >
         <mat-card class="card-start-quiz">
-            <mat-card-header>
-              <div mat-card-avatar class="header-image"></div>
-              <mat-card-title>צמח</mat-card-title>
-              <mat-card-subtitle>צמח 1</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/image1.png" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-              <p>
-               to start quiz please click on button
-              </p>
-            </mat-card-content>
+          
             <mat-card-actions fxLayoutAlign="space-around center">
-                <button (click)="goToQuestions();" mat-flat-button color="accent">Start</button>
+                <button (click)="goToQuestions();"  mat-flat-button color="accent">Start</button>
             </mat-card-actions>
           </mat-card>
     </div>
 
   
-  </div>
+  </div-->
   
    
     

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'yieldsApp Smart Recognition';
+  title = 'yieldsApp diseases identification module';
 
   constructor(private router: Router) { }
 

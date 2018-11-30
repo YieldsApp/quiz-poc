@@ -43,6 +43,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [
     { path: 'smart-ai-recognition', component: _components_questions_questions_component__WEBPACK_IMPORTED_MODULE_3__["QuestionsComponent"] },
+    { path: '', redirectTo: '/smart-ai-recognition', pathMatch: 'full' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -67,7 +68,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\"> Welcome to {{ title }}!</mat-toolbar>\n\n<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n    <div fxFlex=\"33\" class=\"one\" >\n        <mat-card class=\"card-start-quiz\">\n            <mat-card-header>\n              <div mat-card-avatar class=\"header-image\"></div>\n              <mat-card-title>צמח</mat-card-title>\n              <mat-card-subtitle>צמח 1</mat-card-subtitle>\n            </mat-card-header>\n            <img mat-card-image src=\"/assets/image1.png\" alt=\"Photo of a Shiba Inu\">\n            <mat-card-content>\n              <p>\n               to start quiz please click on button\n              </p>\n            </mat-card-content>\n            <mat-card-actions fxLayoutAlign=\"space-around center\">\n                <button (click)=\"goToQuestions();\" mat-flat-button color=\"accent\">Start</button>\n            </mat-card-actions>\n          </mat-card>\n    </div>\n\n  \n  </div>\n  \n   \n    \n      \n\n\n<router-outlet></router-outlet>"
+module.exports = "<mat-toolbar color=\"primary\"> \n \n  <mat-toolbar-row>\n      <span> Welcome to {{ title }}!</span>\n      <span class=\"spacer\"></span>\n      <mat-icon class=\"icon\"> <img class=\"img-fluid\" src=\"/assets/Logo.png\"></mat-icon>\n    </mat-toolbar-row>\n</mat-toolbar>\n\n<!--div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n    <div fxFlex=\"33\" class=\"one\" >\n        <mat-card class=\"card-start-quiz\">\n          \n            <mat-card-actions fxLayoutAlign=\"space-around center\">\n                <button (click)=\"goToQuestions();\"  mat-flat-button color=\"accent\">Start</button>\n            </mat-card-actions>\n          </mat-card>\n    </div>\n\n  \n  </div-->\n  \n   \n    \n      \n\n\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -78,7 +79,7 @@ module.exports = "<mat-toolbar color=\"primary\"> Welcome to {{ title }}!</mat-t
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtFO0VBQ0UsNENBQTJDO0VBQzNDLHVCQUFzQixFQUN2Qjs7QUFDRDtFQUNJLG1CQUFrQjtFQUNsQix1QkFBc0IsRUFDekIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbiAgXHJcblxyXG4gIFxyXG4gIC5oZWFkZXItaW1hZ2Uge1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlMS5wbmcnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgfVxyXG4gIC5jYXJkLXN0YXJ0LXF1aXp7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICB9Il19 */"
+module.exports = ".spacer {\n  flex: 1 1 auto; }\n\n.icon {\n  padding: 0 14px; }\n\n.header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1FO0VBQ0UsZUFBYyxFQUNmOztBQUNEO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSw0Q0FBMkM7RUFDM0MsdUJBQXNCLEVBQ3ZCOztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLHVCQUFzQixFQUN6QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5cclxuICBcclxuXHJcbiAgXHJcblxyXG4gIC5zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbiAgfVxyXG4gIC5pY29uIHtcclxuICAgIHBhZGRpbmc6IDAgMTRweDtcclxuICB9XHJcbiAgXHJcbiAgLmhlYWRlci1pbWFnZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2UxLnBuZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICB9XHJcbiAgLmNhcmQtc3RhcnQtcXVpentcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIH0iXX0= */"
 
 /***/ }),
 
@@ -101,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(router) {
         this.router = router;
-        this.title = 'yieldsApp Smart Recognition';
+        this.title = 'yieldsApp diseases identification module';
     }
     AppComponent.prototype.goToQuestions = function () {
         this.router.navigateByUrl('/smart-ai-recognition');
@@ -194,7 +195,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1 mat-dialog-title>Favorite Animal</h1>\r\n<div mat-dialog-content>\r\n  The Result Is\r\n  <b><h3>{{data.result}}</h3></b>\r\n</div>"
+module.exports = "<h1 mat-dialog-title>Identification</h1>\r\n<div mat-dialog-content>\r\n  <b><h3>{{data.name}}</h3></b>\r\n   <div *ngIf=\"data.probability>0\">probabilty:  \r\n    <b><h3>{{data.probability}} %</h3></b>\r\n   </div>\r\n  \r\n</div>"
 
 /***/ }),
 
@@ -205,7 +206,7 @@ module.exports = "<h1 mat-dialog-title>Favorite Animal</h1>\r\n<div mat-dialog-c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card *ngIf=\"question\">\n  <mat-card-header>\n    <mat-card-title>{{question.text}}</mat-card-title>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-form-field>\n      <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\" >\n        <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\n          {{answer.text}}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n\n  </mat-card-content>\n  <mat-card-actions fxLayoutAlign=\"space-around center\">\n    <button (click)=\"goToNextQuestion();\" [disabled] =\"question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Next</button>\n    <button (click)=\"calculate();\" [disabled] =\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\n  </mat-card-actions>\n\n</mat-card>"
+module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n  <div fxFlex=\"33\" class=\"one\">\n\n\n      <mat-card *ngIf=\"question\">\n        <mat-card-header>\n          <mat-card-title>{{question.text}}</mat-card-title>\n        </mat-card-header>\n        <mat-card-content>\n          <mat-form-field>\n            <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\">\n              <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\n                {{answer.text}}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n\n        </mat-card-content>\n        <mat-card-actions fxLayoutAlign=\"space-around center\">\n          <button (click)=\"goToNextQuestion();\" [disabled]=\"question.isLast || !this.selectedAnswer\" mat-flat-button\n            color=\"accent\">Next</button>\n          <button (click)=\"calculate();\" [disabled]=\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\n        </mat-card-actions>\n\n      </mat-card>\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
@@ -286,13 +287,18 @@ var QuestionsComponent = /** @class */ (function () {
         var answer = new src_app_models_answer__WEBPACK_IMPORTED_MODULE_4__["Answer"]();
         answer.id = this.selectedAnswer;
         this.service.addAnswer(this.question, answer);
+        if (this.result) {
+            this.showDialogResult();
+            return;
+        }
         this.service.calculate().subscribe(function (data) {
-            _this.result = data.result;
-            _this.dialog.open(DialogDataResultDialog, {
-                data: {
-                    result: data.result
-                }
-            });
+            _this.result = data;
+            _this.showDialogResult();
+        });
+    };
+    QuestionsComponent.prototype.showDialogResult = function () {
+        this.dialog.open(DialogDataResultDialog, {
+            data: this.result
         });
     };
     QuestionsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

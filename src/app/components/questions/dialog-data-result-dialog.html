@@ -1,5 +1,8 @@
-<h1 mat-dialog-title>Favorite Animal</h1>
+<h1 mat-dialog-title>Identification</h1>
 <div mat-dialog-content>
-  The Result Is
-  <b><h3>{{data.result}}</h3></b>
+  <b><h3>{{data.name}}</h3></b>
+   <div *ngIf="data.probability>0">probabilty:  
+    <b><h3>{{data.probability}} %</h3></b>
+   </div>
+  
 </div>

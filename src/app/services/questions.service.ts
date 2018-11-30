@@ -29,8 +29,8 @@ export class QuestionsService {
       return this.http.get(`/api/nextQuestion/${question.id}/${answer.id}`);
     }
 
-    calculate():  Observable<{ result: string}> {
-       return this.http.post<{ result: string}>('/api/results',this.answers);
+    calculate():  Observable<{ name: string, probability:number}> {
+       return this.http.post<{ name: string, probability:number}>('/api/results',this.answers);
     }
 
 }

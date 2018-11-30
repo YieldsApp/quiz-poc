@@ -4,7 +4,7 @@ import { QuestionsComponent } from './components/questions/questions.component';
 
 const routes: Routes = [
   { path: 'smart-ai-recognition', component: QuestionsComponent },
-  
+  { path: '',  redirectTo: '/smart-ai-recognition', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -64,12 +64,44 @@ router.post('/results', (req, res) => {
 
     return calculator + answer.value;
   }, 0);
+  console.log("sumAnswer", sumAnswer);
 
-  let calculteResult= _.find(resultsList,(result)=> sumAnswer>=result.from && sumAnswer<=result.from  );
-  var response= calculteResult? calculteResult.name: 'Not found, Please try again';
 
-  res.status(200).json({result: response});
+  let calculteResultOption;
+  let calculteResult = _.find(resultsList, (result) => {
+    calculteResultOption = _.find(result.options, { "value": sumAnswer });
+    return calculteResultOption;
+  });
+
+  let result = {};
+  if (calculteResult) {
+    result.name = calculteResult.name;
+    result.probability = randomIntFromInterval(calculteResultOption.probability.from, calculteResultOption.probability.to);
+  }
+  else {
+    if (sumAnswer > 1) {
+      let nearestCalculteResult = _.flatMap(resultsList, (result) => {
+        return _.map(result.options, option => _.assign(option, { name: result.name, calculate: Math.abs(sumAnswer - option.value) }));
+      });
+      nearestCalculteResult = _.head(_.orderBy(nearestCalculteResult, 'calculate'));
+      console.log("nearestCalculteResult", nearestCalculteResult);
+      result.name = nearestCalculteResult.name;
+      result.probability = randomIntFromInterval(nearestCalculteResult.probability.from, nearestCalculteResult.probability.to) * 0.7;
+    }
+    else {
+      result.name = 'There is no disease';
+      result.probability = 0;
+    }
+  }
+
+  res.status(200).json(result);
 });
+
+
+function randomIntFromInterval(min, max) // min and max included
+{
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 function getNextSiblingQuestion(question) {
   if (question.isLast) {
