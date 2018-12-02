@@ -11,7 +11,7 @@ import _ from 'lodash';
 export class QuestionsService {
   answers: {questionId: number, answerId: number}[]=[];
 
-  baseUrl: '';
+  baseUrl: string ='';
   constructor(private http: HttpClient) { }
 
     

@@ -104,16 +104,6 @@ var AppComponent = /** @class */ (function () {
         this.router = router;
         this.title = 'yieldsApp diseases identification module';
     }
-    AppComponent.prototype.onSelectFile = function (event) {
-        var _this = this;
-        if (event.target.files && event.target.files[0]) {
-            var reader = new FileReader();
-            reader.readAsDataURL(event.target.files[0]); // read file as data url
-            reader.onload = function (event) {
-                _this.url = event.target.result;
-            };
-        }
-    };
     AppComponent.prototype.goToQuestions = function () {
         this.router.navigateByUrl('/smart-ai-recognition');
     };
@@ -227,7 +217,7 @@ module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".mat-card-header-text {\n  margin: 0px !important;\n  padding: 0px !important; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9xdWVzdGlvbnMvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcY29tcG9uZW50c1xccXVlc3Rpb25zXFxxdWVzdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSx1QkFBc0I7RUFDdEIsd0JBQXVCLEVBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9xdWVzdGlvbnMvcXVlc3Rpb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5tYXQtY2FyZC1oZWFkZXItdGV4dCB7XHJcbiAgICBtYXJnaW46IDBweCAhaW1wb3J0YW50O1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbn0iXX0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcXVlc3Rpb25zL3F1ZXN0aW9ucy5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -459,6 +449,7 @@ var QuestionsService = /** @class */ (function () {
     function QuestionsService(http) {
         this.http = http;
         this.answers = [];
+        this.baseUrl = '';
     }
     // Get all posts from the API
     QuestionsService.prototype.getFirstQuestion = function () {
