@@ -21,41 +21,7 @@
         {
           "text": "Yes",
           "value": 2,
-          "id": 1,
-          "questions": [
-            {
-              "text": "Do you see 'target' like concentric circles?",
-              "answers": [
-                {
-                  "text": "Yes",
-                  "value": 3,
-                  "id": 1,
-                  "questions": [
-                    {
-                      "text": "Are the concentric, 'target-like' circles yellow?",
-                      "answers": [
-                        {
-                          "text": "Yes",
-                          "value": 4,
-                          "id": 1
-                        },
-                        {
-                          "text": "No",
-                          "value": 0,
-                          "id": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "text": "No",
-                  "value": 0,
-                  "id": 3
-                }
-              ]
-            }
-          ]
+          "id": 1
         },
         {
           "text": "No",
@@ -78,6 +44,38 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "text": "Do you see 'target' like concentric circles?",
+      "answers": [
+        {
+          "text": "Yes",
+          "value": 3,
+          "id": 1,
+          "questions": [
+            {
+              "text": "Are the concentric, 'target-like' circles yellow?",
+              "answers": [
+                {
+                  "text": "Yes",
+                  "value": 4,
+                  "id": 1
+                },
+                {
+                  "text": "No",
+                  "value": 0,
+                  "id": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "No",
+          "value": 0,
+          "id": 3
         }
       ]
     },
@@ -110,7 +108,24 @@
                 {
                   "text": "Yes",
                   "value": 8,
-                  "id": 1
+                  "id": 1,
+                  "questions": [
+                    {
+                      "text": "Do you see gray/white moldy growth on the lesions?",
+                      "answers": [
+                        {
+                          "text": "Yes",
+                          "value": 10,
+                          "id": 1
+                        },
+                        {
+                          "text": "No",
+                          "value": 0,
+                          "id": 2
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "text": "No",
@@ -120,36 +135,6 @@
               ]
             }
           ]
-        },
-        {
-          "text": "No",
-          "value": 0,
-          "id": 2
-        }
-      ]
-    },
-    {
-      "text": "Do you see gray/white moldy growth on the lesions?",
-      "answers": [
-        {
-          "text": "Yes",
-          "value": 10,
-          "id": 1
-        },
-        {
-          "text": "No",
-          "value": 0,
-          "id": 2
-        }
-      ]
-    },
-    {
-      "text": "Are the lesions water-soaked?",
-      "answers": [
-        {
-          "text": "Yes",
-          "value": 13,
-          "id": 1
         },
         {
           "text": "No",

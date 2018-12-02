@@ -11,7 +11,7 @@ let questions = flattenQuestions(questionList);
 let resultsList = require('../data/results').results;
 
 
-axios.get(`https://api.myjson.com/bins/9h6aa`)
+/*axios.get(`https://api.myjson.com/bins/9h6aa`)
     .then(data => {
       console.log('questions',data.data);
       questionList= data.data.questions;
@@ -22,7 +22,7 @@ axios.get(`https://api.myjson.com/bins/9h6aa`)
     .then(data => {
       console.log('results',data.data);
       resultsList= data.data.results;
-    });
+    });*/
 
 /* GET api listing. */
 router.get('/', (req, res) => {

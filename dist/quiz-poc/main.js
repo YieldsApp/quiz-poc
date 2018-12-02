@@ -68,7 +68,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\"> \n \n  <mat-toolbar-row>\n      <span> Welcome to {{ title }}!</span>\n      <span class=\"spacer\"></span>\n      <mat-icon class=\"icon\"> <img class=\"img-fluid\" src=\"/assets/Logo.png\"></mat-icon>\n    </mat-toolbar-row>\n</mat-toolbar>\n\n<!--div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n    <div fxFlex=\"33\" class=\"one\" >\n        <mat-card class=\"card-start-quiz\">\n          \n            <mat-card-actions fxLayoutAlign=\"space-around center\">\n                <button (click)=\"goToQuestions();\"  mat-flat-button color=\"accent\">Start</button>\n            </mat-card-actions>\n          </mat-card>\n    </div>\n\n  \n  </div-->\n  \n   \n    \n      \n\n\n<router-outlet></router-outlet>"
+module.exports = "<mat-toolbar color=\"primary\"> \n \n  <mat-toolbar-row>\n      <span> Welcome to {{ title }}!</span>\n      <span class=\"spacer\"></span>\n    </mat-toolbar-row>\n</mat-toolbar>\n\n\n\n\n\n\n\n\n\n<!--div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n    <div fxFlex=\"33\" class=\"one\" >\n        <mat-card class=\"card-start-quiz\">\n          \n            <mat-card-actions fxLayoutAlign=\"space-around center\">\n                <button (click)=\"goToQuestions();\"  mat-flat-button color=\"accent\">Start</button>\n            </mat-card-actions>\n          </mat-card>\n    </div>\n\n  \n  </div-->\n  \n   \n    \n      \n\n\n<router-outlet></router-outlet>"
 
 /***/ }),
 
