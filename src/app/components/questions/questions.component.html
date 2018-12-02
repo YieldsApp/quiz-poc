@@ -1,29 +1,36 @@
 <div fxLayout="row" fxLayoutAlign="space-around center">
 
-  <div fxFlex="33" class="one">
+  <div fxFlex="90" fxFlex.gt-xs="33" class="one">
+    
+    <button mat-button (click)="fileInput.click()" *ngIf="!url">
+      <mat-icon class="icon">library_add</mat-icon>
+      <span class="image-select">Select Image</span>
+      <input #fileInput type="file" (change)="onSelectFile($event)" style="display:none;" />
+    </button>
 
+    <mat-card *ngIf="question && url">
+      <img mat-card-image [src]="url" *ngIf="url" alt="Photo of a Shiba Inu">
+      <mat-card-header>
+        <mat-card-title>{{question.text}}</mat-card-title>
+      </mat-card-header>
 
-      <mat-card *ngIf="question">
-        <mat-card-header>
-          <mat-card-title>{{question.text}}</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <mat-form-field>
-            <mat-select placeholder="choose an option" [(ngModel)]="selectedAnswer">
-              <mat-option *ngFor="let answer of question.answers" [value]="answer.id">
-                {{answer.text}}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
+      <mat-card-content>
+        <mat-form-field>
+          <mat-select placeholder="choose an option" [(ngModel)]="selectedAnswer">
+            <mat-option *ngFor="let answer of question.answers" [value]="answer.id">
+              {{answer.text}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
 
-        </mat-card-content>
-        <mat-card-actions fxLayoutAlign="space-around center">
-          <button (click)="goToNextQuestion();" [disabled]="question.isLast || !this.selectedAnswer" mat-flat-button
-            color="accent">Next</button>
-          <button (click)="calculate();" [disabled]="!question.isLast || !this.selectedAnswer" mat-flat-button color="accent">Recognize</button>
-        </mat-card-actions>
+      </mat-card-content>
+      <mat-card-actions fxLayoutAlign="space-around center">
+        <button (click)="goToNextQuestion();" [disabled]="question.isLast || !this.selectedAnswer" mat-flat-button
+          color="accent">Next</button>
+        <button (click)="calculate();" [disabled]="!question.isLast || !this.selectedAnswer" mat-flat-button color="accent">Recognize</button>
+      </mat-card-actions>
 
-      </mat-card>
+    </mat-card>
   </div>
 
 

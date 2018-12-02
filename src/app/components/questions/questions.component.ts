@@ -29,6 +29,9 @@ export class QuestionsComponent implements OnInit {
   question: Question;
   selectedAnswer: number;
   result: DialogData;
+  url: string;
+ 
+
   constructor(private router: Router, private service: QuestionsService, public dialog: MatDialog) {
   }
 
@@ -38,6 +41,18 @@ export class QuestionsComponent implements OnInit {
       .subscribe((question: Question) => this.question = question);
   }
 
+
+  onSelectFile(event) { // called each time file input changes
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
+
+      reader.readAsDataURL(event.target.files[0]); // read file as data url
+
+      reader.onload = (event:any) => { // called once readAsDataURL is completed
+        this.url = event.target.result;
+      }
+    }
+}
   goToNextQuestion() {
 
     var answer = new Answer();

@@ -68,7 +68,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\"> \n \n  <mat-toolbar-row>\n      <span> Welcome to {{ title }}!</span>\n      <span class=\"spacer\"></span>\n    </mat-toolbar-row>\n</mat-toolbar>\n\n\n\n\n\n\n\n\n\n<!--div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n    <div fxFlex=\"33\" class=\"one\" >\n        <mat-card class=\"card-start-quiz\">\n          \n            <mat-card-actions fxLayoutAlign=\"space-around center\">\n                <button (click)=\"goToQuestions();\"  mat-flat-button color=\"accent\">Start</button>\n            </mat-card-actions>\n          </mat-card>\n    </div>\n\n  \n  </div-->\n  \n   \n    \n      \n\n\n<router-outlet></router-outlet>"
+module.exports = "<mat-toolbar color=\"primary\">\n\n  <mat-toolbar-row >\n    <span>{{ title }}</span>\n  </mat-toolbar-row>\n</mat-toolbar>\n\n\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ module.exports = "<mat-toolbar color=\"primary\"> \n \n  <mat-toolbar-row>\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".spacer {\n  flex: 1 1 auto; }\n\n.icon {\n  padding: 0 14px; }\n\n.header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1FO0VBQ0UsZUFBYyxFQUNmOztBQUNEO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSw0Q0FBMkM7RUFDM0MsdUJBQXNCLEVBQ3ZCOztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLHVCQUFzQixFQUN6QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5cclxuICBcclxuXHJcbiAgXHJcblxyXG4gIC5zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbiAgfVxyXG4gIC5pY29uIHtcclxuICAgIHBhZGRpbmc6IDAgMTRweDtcclxuICB9XHJcbiAgXHJcbiAgLmhlYWRlci1pbWFnZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2UxLnBuZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICB9XHJcbiAgLmNhcmQtc3RhcnQtcXVpentcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIH0iXX0= */"
+module.exports = "mat-toolbar-row {\n  white-space: normal; }\n\n.spacer {\n  flex: 1 1 auto; }\n\n.icon {\n  padding: 0 14px; }\n\n.header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlDO0VBQ0Msb0JBQW1CLEVBQ25COztBQUVBO0VBQ0UsZUFBYyxFQUNmOztBQUNEO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSw0Q0FBMkM7RUFDM0MsdUJBQXNCLEVBQ3ZCOztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLHVCQUFzQixFQUN6QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5cclxuICBcclxuXHJcbiBtYXQtdG9vbGJhci1yb3d7XHJcbiAgd2hpdGUtc3BhY2U6IG5vcm1hbDtcclxuIH0gXHJcblxyXG4gIC5zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbiAgfVxyXG4gIC5pY29uIHtcclxuICAgIHBhZGRpbmc6IDAgMTRweDtcclxuICB9XHJcbiAgXHJcbiAgLmhlYWRlci1pbWFnZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2UxLnBuZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICB9XHJcbiAgLmNhcmQtc3RhcnQtcXVpentcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIH1cclxuXHJcbiAiXX0= */"
 
 /***/ }),
 
@@ -104,6 +104,16 @@ var AppComponent = /** @class */ (function () {
         this.router = router;
         this.title = 'yieldsApp diseases identification module';
     }
+    AppComponent.prototype.onSelectFile = function (event) {
+        var _this = this;
+        if (event.target.files && event.target.files[0]) {
+            var reader = new FileReader();
+            reader.readAsDataURL(event.target.files[0]); // read file as data url
+            reader.onload = function (event) {
+                _this.url = event.target.result;
+            };
+        }
+    };
     AppComponent.prototype.goToQuestions = function () {
         this.router.navigateByUrl('/smart-ai-recognition');
     };
@@ -206,7 +216,7 @@ module.exports = "<h1 mat-dialog-title>Identification</h1>\r\n<div mat-dialog-co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n  <div fxFlex=\"33\" class=\"one\">\n\n\n      <mat-card *ngIf=\"question\">\n        <mat-card-header>\n          <mat-card-title>{{question.text}}</mat-card-title>\n        </mat-card-header>\n        <mat-card-content>\n          <mat-form-field>\n            <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\">\n              <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\n                {{answer.text}}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n\n        </mat-card-content>\n        <mat-card-actions fxLayoutAlign=\"space-around center\">\n          <button (click)=\"goToNextQuestion();\" [disabled]=\"question.isLast || !this.selectedAnswer\" mat-flat-button\n            color=\"accent\">Next</button>\n          <button (click)=\"calculate();\" [disabled]=\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\n        </mat-card-actions>\n\n      </mat-card>\n  </div>\n\n\n</div>\n"
+module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n  <div fxFlex=\"90\" fxFlex.gt-xs=\"33\" class=\"one\">\n    \n    <button mat-button (click)=\"fileInput.click()\" *ngIf=\"!url\">\n      <mat-icon class=\"icon\">library_add</mat-icon>\n      <span class=\"image-select\">Select Image</span>\n      <input #fileInput type=\"file\" (change)=\"onSelectFile($event)\" style=\"display:none;\" />\n    </button>\n\n    <mat-card *ngIf=\"question && url\">\n      <img mat-card-image [src]=\"url\" *ngIf=\"url\" alt=\"Photo of a Shiba Inu\">\n      <mat-card-header>\n        <mat-card-title>{{question.text}}</mat-card-title>\n      </mat-card-header>\n\n      <mat-card-content>\n        <mat-form-field>\n          <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\">\n            <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\n              {{answer.text}}\n            </mat-option>\n          </mat-select>\n        </mat-form-field>\n\n      </mat-card-content>\n      <mat-card-actions fxLayoutAlign=\"space-around center\">\n        <button (click)=\"goToNextQuestion();\" [disabled]=\"question.isLast || !this.selectedAnswer\" mat-flat-button\n          color=\"accent\">Next</button>\n        <button (click)=\"calculate();\" [disabled]=\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\n      </mat-card-actions>\n\n    </mat-card>\n  </div>\n\n\n</div>"
 
 /***/ }),
 
@@ -217,7 +227,7 @@ module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcXVlc3Rpb25zL3F1ZXN0aW9ucy5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".mat-card-header-text {\n  margin: 0px !important;\n  padding: 0px !important; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9xdWVzdGlvbnMvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcY29tcG9uZW50c1xccXVlc3Rpb25zXFxxdWVzdGlvbnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSx1QkFBc0I7RUFDdEIsd0JBQXVCLEVBQzFCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9xdWVzdGlvbnMvcXVlc3Rpb25zLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5tYXQtY2FyZC1oZWFkZXItdGV4dCB7XHJcbiAgICBtYXJnaW46IDBweCAhaW1wb3J0YW50O1xyXG4gICAgcGFkZGluZzogMHB4ICFpbXBvcnRhbnQ7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -270,6 +280,16 @@ var QuestionsComponent = /** @class */ (function () {
         //console.log("ngOnInit fired");
         this.service.getFirstQuestion()
             .subscribe(function (question) { return _this.question = question; });
+    };
+    QuestionsComponent.prototype.onSelectFile = function (event) {
+        var _this = this;
+        if (event.target.files && event.target.files[0]) {
+            var reader = new FileReader();
+            reader.readAsDataURL(event.target.files[0]); // read file as data url
+            reader.onload = function (event) {
+                _this.url = event.target.result;
+            };
+        }
     };
     QuestionsComponent.prototype.goToNextQuestion = function () {
         var _this = this;
@@ -442,7 +462,7 @@ var QuestionsService = /** @class */ (function () {
     }
     // Get all posts from the API
     QuestionsService.prototype.getFirstQuestion = function () {
-        return this.http.get('/api/Question/0');
+        return this.http.get(this.baseUrl + '/api/Question/0');
     };
     QuestionsService.prototype.addAnswer = function (question, answer) {
         if (lodash__WEBPACK_IMPORTED_MODULE_3___default.a.find(this.answers, { questionId: question.id }))
@@ -451,10 +471,10 @@ var QuestionsService = /** @class */ (function () {
     };
     // Get all posts from the API
     QuestionsService.prototype.getNextQuestion = function (question, answer) {
-        return this.http.get("/api/nextQuestion/" + question.id + "/" + answer.id);
+        return this.http.get(this.baseUrl + ("/api/nextQuestion/" + question.id + "/" + answer.id));
     };
     QuestionsService.prototype.calculate = function () {
-        return this.http.post('/api/results', this.answers);
+        return this.http.post(this.baseUrl + '/api/results', this.answers);
     };
     QuestionsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({

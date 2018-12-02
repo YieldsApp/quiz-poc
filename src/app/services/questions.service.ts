@@ -11,12 +11,13 @@ import _ from 'lodash';
 export class QuestionsService {
   answers: {questionId: number, answerId: number}[]=[];
 
+  baseUrl: '';
   constructor(private http: HttpClient) { }
 
     
     // Get all posts from the API
     getFirstQuestion() : Observable<Question>  {
-      return this.http.get<Question>('/api/Question/0');
+      return this.http.get<Question>(this.baseUrl+ '/api/Question/0');
     }
 
     addAnswer(question: Question,answer: Answer){
@@ -26,11 +27,11 @@ export class QuestionsService {
     }
     // Get all posts from the API
     getNextQuestion(question: Question,answer: Answer) {
-      return this.http.get(`/api/nextQuestion/${question.id}/${answer.id}`);
+      return this.http.get(this.baseUrl+  `/api/nextQuestion/${question.id}/${answer.id}`);
     }
 
     calculate():  Observable<{ name: string, probability:number}> {
-       return this.http.post<{ name: string, probability:number}>('/api/results',this.answers);
+       return this.http.post<{ name: string, probability:number}>(this.baseUrl+  '/api/results',this.answers);
     }
 
 }
