@@ -1,151 +1,151 @@
-{
-  "questions": [
-    {
-      "text": "Do you see symptoms on leaves?",
-      "answers": [
-        {
-          "text": "Yes",
-          "value": 1,
-          "id": 1
-        },
-        {
-          "text": "No",
-          "value": 0,
-          "id": 2
-        }
-      ]
-    },
-    {
-      "text": "Do the lesions have circular/round shape?",
-      "answers": [
-        {
-          "text": "Yes",
-          "value": 2,
-          "id": 1
-        },
-        {
-          "text": "No",
-          "value": 0,
-          "id": 2,
-          "questions": [
-            {
-              "text": "Are the spots small, angular? Do they have black/brown borders and lighter color in the center?",
-              "answers": [
-                {
-                  "text": "Yes",
-                  "value": 5,
-                  "id": 1
-                },
-                {
-                  "text": "No",
-                  "value": 0,
-                  "id": 2
-                }
-              ]
-            },
-            {
-              "text": "Do the lesions have irregular shape (undefined defined shape)?",
-              "answers": [
-                {
-                  "text": "Yes",
-                  "value": 7,
-                  "id": 1,
-                  "questions": [
-                    {
-                      "text": "If irregular shape, are the lesions relatively large?",
-                      "answers": [
-                        {
-                          "text": "Yes",
-                          "value": 8,
-                          "id": 1,
-                          "questions": [
-                            {
-                              "text": "Do you see gray/white moldy growth on the lesions?",
-                              "answers": [
-                                {
-                                  "text": "Yes",
-                                  "value": 10,
-                                  "id": 1
-                                },
-                                {
-                                  "text": "No",
-                                  "value": 0,
-                                  "id": 2
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "text": "No",
-                          "value": 0,
-                          "id": 2
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "text": "No",
-                  "value": 0,
-                  "id": 2
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "text": "Do you see 'target' like concentric circles?",
-      "answers": [
-        {
-          "text": "Yes",
-          "value": 3,
-          "id": 1,
-          "questions": [
-            {
-              "text": "Are the concentric, 'target-like' circles yellow?",
-              "answers": [
-                {
-                  "text": "Yes",
-                  "value": 4,
-                  "id": 1
-                },
-                {
-                  "text": "No",
-                  "value": 0,
-                  "id": 2,
-                  "questions":[
-                    {
-                      "text": "Do you see small black dots inside the spots/lesions?",
-                      "answers": [
-                        {
-                          "text": "Yes",
-                          "value": 6,
-                          "id": 1
-                        },
-                        {
-                          "text": "No",
-                          "value": 0,
-                          "id": 2
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "No",
-          "value": 0,
-          "id": 3
-        }
-      ]
-    }
+  {
+    "questions": [
+      {
+        "text": "Do you see symptoms on leaves?",
+        "answers": [
+          {
+            "text": "Yes",
+            "value": 1,
+            "id": 1
+          },
+          {
+            "text": "No",
+            "value": 0,
+            "id": 2
+          }
+        ]
+      },
+      {
+        "text": "Do the lesions have circular/round shape?",
+        "answers": [
+          {
+            "text": "Yes",
+            "value": 2,
+            "id": 1
+          },
+          {
+            "text": "No",
+            "value": 0,
+            "id": 2,
+            "questions": [
+              {
+                "text": "Are the spots small, angular? Do they have black/brown borders and lighter color in the center?",
+                "answers": [
+                  {
+                    "text": "Yes",
+                    "value": 5,
+                    "id": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 0,
+                    "id": 2
+                  }
+                ]
+              },
+              {
+                "text": "Do the lesions have irregular shape (undefined defined shape)?",
+                "answers": [
+                  {
+                    "text": "Yes",
+                    "value": 7,
+                    "id": 1,
+                    "questions": [
+                      {
+                        "text": "If irregular shape, are the lesions relatively large?",
+                        "answers": [
+                          {
+                            "text": "Yes",
+                            "value": 8,
+                            "id": 1,
+                            "questions": [
+                              {
+                                "text": "Do you see gray/white moldy growth on the lesions?",
+                                "answers": [
+                                  {
+                                    "text": "Yes",
+                                    "value": 10,
+                                    "id": 1
+                                  },
+                                  {
+                                    "text": "No",
+                                    "value": 0,
+                                    "id": 2
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "text": "No",
+                            "value": 0,
+                            "id": 2
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "No",
+                    "value": 0,
+                    "id": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Do you see 'target' like concentric circles?",
+        "answers": [
+          {
+            "text": "Yes",
+            "value": 3,
+            "id": 1,
+            "questions": [
+              {
+                "text": "Are the concentric, 'target-like' circles yellow?",
+                "answers": [
+                  {
+                    "text": "Yes",
+                    "value": 4,
+                    "id": 1
+                  },
+                  {
+                    "text": "No",
+                    "value": 0,
+                    "id": 2,
+                    "questions":[
+                      {
+                        "text": "Do you see small black dots inside the spots/lesions?",
+                        "answers": [
+                          {
+                            "text": "Yes",
+                            "value": 6,
+                            "id": 1
+                          },
+                          {
+                            "text": "No",
+                            "value": 0,
+                            "id": 2
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "No",
+            "value": 0,
+            "id": 3
+          }
+        ]
+      }
+      
     
-  
-  ]
-}
+    ]
+  }

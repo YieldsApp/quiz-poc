@@ -68,7 +68,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n\n  <mat-toolbar-row >\n    <span>{{ title }}</span>\n  </mat-toolbar-row>\n</mat-toolbar>\n\n\n<router-outlet></router-outlet>"
+module.exports = "<mat-toolbar color=\"primary\">\r\n\r\n  <mat-toolbar-row >\r\n    <span>{{ title }}</span>\r\n  </mat-toolbar-row>\r\n</mat-toolbar>\r\n\r\n\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ module.exports = "<mat-toolbar color=\"primary\">\n\n  <mat-toolbar-row >\n    <
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "mat-toolbar-row {\n  white-space: normal; }\n\n.spacer {\n  flex: 1 1 auto; }\n\n.icon {\n  padding: 0 14px; }\n\n.header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFByb2plY3RzXFxxdWl6LXBvYy9zcmNcXGFwcFxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlDO0VBQ0Msb0JBQW1CLEVBQ25COztBQUVBO0VBQ0UsZUFBYyxFQUNmOztBQUNEO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSw0Q0FBMkM7RUFDM0MsdUJBQXNCLEVBQ3ZCOztBQUNEO0VBQ0ksbUJBQWtCO0VBQ2xCLHVCQUFzQixFQUN6QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5cclxuICBcclxuXHJcbiBtYXQtdG9vbGJhci1yb3d7XHJcbiAgd2hpdGUtc3BhY2U6IG5vcm1hbDtcclxuIH0gXHJcblxyXG4gIC5zcGFjZXIge1xyXG4gICAgZmxleDogMSAxIGF1dG87XHJcbiAgfVxyXG4gIC5pY29uIHtcclxuICAgIHBhZGRpbmc6IDAgMTRweDtcclxuICB9XHJcbiAgXHJcbiAgLmhlYWRlci1pbWFnZSB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2UxLnBuZycpO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICB9XHJcbiAgLmNhcmQtc3RhcnQtcXVpentcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIH1cclxuXHJcbiAiXX0= */"
+module.exports = "mat-toolbar-row {\n  white-space: normal; }\n\n.spacer {\n  flex: 1 1 auto; }\n\n.icon {\n  padding: 0 14px; }\n\n.header-image {\n  background-image: url(\"/assets/image1.png\");\n  background-size: cover; }\n\n.card-start-quiz {\n  text-align: center;\n  vertical-align: middle; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQzpcXFVzZXJzXFzXnteX16nXkVxcRGVza3RvcFxc16TXqNeV15nXp9eYINeS157XqFxccXVpei1wb2Mvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQztFQUNDLG9CQUFtQixFQUNuQjs7QUFFQTtFQUNFLGVBQWMsRUFDZjs7QUFDRDtFQUNFLGdCQUFlLEVBQ2hCOztBQUVEO0VBQ0UsNENBQTJDO0VBQzNDLHVCQUFzQixFQUN2Qjs7QUFDRDtFQUNJLG1CQUFrQjtFQUNsQix1QkFBc0IsRUFDekIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbiAgXHJcblxyXG4gbWF0LXRvb2xiYXItcm93e1xyXG4gIHdoaXRlLXNwYWNlOiBub3JtYWw7XHJcbiB9IFxyXG5cclxuICAuc3BhY2VyIHtcclxuICAgIGZsZXg6IDEgMSBhdXRvO1xyXG4gIH1cclxuICAuaWNvbiB7XHJcbiAgICBwYWRkaW5nOiAwIDE0cHg7XHJcbiAgfVxyXG4gIFxyXG4gIC5oZWFkZXItaW1hZ2Uge1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlMS5wbmcnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgfVxyXG4gIC5jYXJkLXN0YXJ0LXF1aXp7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICB9XHJcblxyXG4gIl19 */"
 
 /***/ }),
 
@@ -206,7 +206,7 @@ module.exports = "<h1 mat-dialog-title>Identification</h1>\r\n<div mat-dialog-co
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\n\n  <div fxFlex=\"90\" fxFlex.gt-xs=\"33\" class=\"one\">\n    \n    <button mat-button (click)=\"fileInput.click()\" *ngIf=\"!url\">\n      <mat-icon class=\"icon\">library_add</mat-icon>\n      <span class=\"image-select\">Select Image</span>\n      <input #fileInput type=\"file\" (change)=\"onSelectFile($event)\" style=\"display:none;\" />\n    </button>\n\n    <mat-card *ngIf=\"question && url\">\n      <img mat-card-image [src]=\"url\" *ngIf=\"url\" alt=\"Photo of a Shiba Inu\">\n      <mat-card-header>\n        <mat-card-title>{{question.text}}</mat-card-title>\n      </mat-card-header>\n\n      <mat-card-content>\n        <mat-form-field>\n          <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\">\n            <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\n              {{answer.text}}\n            </mat-option>\n          </mat-select>\n        </mat-form-field>\n\n      </mat-card-content>\n      <mat-card-actions fxLayoutAlign=\"space-around center\">\n        <button (click)=\"goToNextQuestion();\" [disabled]=\"question.isLast || !this.selectedAnswer\" mat-flat-button\n          color=\"accent\">Next</button>\n        <button (click)=\"calculate();\" [disabled]=\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\n      </mat-card-actions>\n\n    </mat-card>\n  </div>\n\n\n</div>"
+module.exports = "<div fxLayout=\"row\" fxLayoutAlign=\"space-around center\">\r\n\r\n  <div fxFlex=\"90\" fxFlex.gt-xs=\"33\" class=\"one\">\r\n    \r\n    <button mat-button (click)=\"fileInput.click()\" *ngIf=\"!url\">\r\n      <mat-icon class=\"icon\">library_add</mat-icon>\r\n      <span class=\"image-select\">Select Image</span>\r\n      <input #fileInput type=\"file\" (change)=\"onSelectFile($event)\" style=\"display:none;\" />\r\n    </button>\r\n\r\n    <mat-card *ngIf=\"question && url\">\r\n      <img mat-card-image [src]=\"url\" *ngIf=\"url\" alt=\"Photo of a Shiba Inu\">\r\n      <mat-card-header>\r\n        <mat-card-title>{{question.text}}</mat-card-title>\r\n      </mat-card-header>\r\n\r\n      <mat-card-content>\r\n        <mat-form-field>\r\n          <mat-select placeholder=\"choose an option\" [(ngModel)]=\"selectedAnswer\">\r\n            <mat-option *ngFor=\"let answer of question.answers\" [value]=\"answer.id\">\r\n              {{answer.text}}\r\n            </mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n      </mat-card-content>\r\n      <mat-card-actions fxLayoutAlign=\"space-around center\">\r\n        <button (click)=\"goToNextQuestion();\" [disabled]=\"question.isLast || !this.selectedAnswer\" mat-flat-button\r\n          color=\"accent\">Next</button>\r\n        <button (click)=\"calculate();\" [disabled]=\"!question.isLast || !this.selectedAnswer\" mat-flat-button color=\"accent\">Recognize</button>\r\n      </mat-card-actions>\r\n\r\n    </mat-card>\r\n  </div>\r\n\r\n\r\n</div>"
 
 /***/ }),
 
@@ -544,7 +544,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Projects\quiz-poc\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\מחשב\Desktop\פרויקט גמר\quiz-poc\src\main.ts */"./src/main.ts");
 
 
 /***/ })
